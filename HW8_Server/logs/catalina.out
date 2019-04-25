@@ -1,0 +1,116 @@
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:06 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 12:54:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 12:54:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 520 ms
+Apr 25, 2019 12:54:07 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 25, 2019 12:54:07 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.26
+Apr 25, 2019 12:54:07 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 12:54:07 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 49 ms
+Apr 25, 2019 12:57:50 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 25, 2019 12:57:50 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 12:57:50 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 25, 2019 12:57:50 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 12:57:50 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:15 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/var/lib/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Apr 25, 2019 1:20:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 1:20:16 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 566 ms
+Apr 25, 2019 1:20:16 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 25, 2019 1:20:16 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.26
+Apr 25, 2019 1:20:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/mccommon/tomcat/460HW8/HW8_Server/webapps/SonoranCellular
+Apr 25, 2019 1:20:16 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SonoranCellular]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1095)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1617)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.UnsupportedClassVersionError: SonoranCellular/servlets/AddPlan : Unsupported major.minor version 52.0 (unable to load class SonoranCellular.servlets.AddPlan)
+	at org.apache.catalina.loader.WebappClassLoader.findClassInternal(WebappClassLoader.java:2840)
+	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1160)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1668)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1546)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:108)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:58)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:381)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:858)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:345)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5161)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 11 more
+
+Apr 25, 2019 1:20:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+SEVERE: Error deploying web application directory /home/mccommon/tomcat/460HW8/HW8_Server/webapps/SonoranCellular
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SonoranCellular]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:898)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:871)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1095)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1617)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Apr 25, 2019 1:20:16 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 1:20:16 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 377 ms
+Apr 25, 2019 1:28:47 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 25, 2019 1:28:47 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 1:28:47 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 25, 2019 1:28:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8854"]
+Apr 25, 2019 1:28:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8854"]
