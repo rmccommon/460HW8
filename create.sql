@@ -33,18 +33,6 @@ CREATE TABLE MediaService (
 	PRIMARY KEY(ServiceName)
 );
 
-CREATE TABLE Channel (
-	ChannelName VARCHAR(255),
-	ServiceName VARCHAR(255),
-	Price NUMBER(3,2),
-	isMovie CHAR(1) check (isMovie in ('F','T')),
-	inHiDef CHAR(1) check (inHiDef in ('F','T')),
-	isSports CHAR(1) check (isSports in ('F','T')),
-	isNews CHAR(1) check (isNews in ('F','T')),
-	PRIMARY KEY(ServiceName, ChannelName),
-	FOREIGN KEY (ServiceName) REFERENCES MediaService
-);
-
 CREATE TABLE SubscribesTo (
 	AccountNumber NUMBER(10),
 	SerialNumber NUMBER(10),
@@ -53,13 +41,4 @@ CREATE TABLE SubscribesTo (
 	FOREIGN KEY (AccountNumber) REFERENCES Account,
 	FOREIGN KEY (SerialNumber) REFERENCES Device,
 	FOREIGN KEY (ServiceName) REFERENCES MediaService
-);
-
-CREATE TABLE ChannelSelection (
-	AccountNumber NUMBER(10),
-	ChannelName VARCHAR(255),
-	ServiceName VARCHAR(255),
-	PRIMARY KEY (AccountNumber, ServiceName, ChannelName),
-	FOREIGN KEY (AccountNumber) REFERENCES Account,
-	FOREIGN KEY (ServiceName, ChannelName) REFERENCES Channel
 );
